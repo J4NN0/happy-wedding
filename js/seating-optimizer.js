@@ -79,7 +79,7 @@ function displaySeatingResults() {
     console.log(`Best humor score: ${humorMax.toFixed(2)}`);
     console.log('Optimal seating arrangement:');
     
-    let resultText = `🎉 Optimal Seating Arrangement Found!\n\nHumor Score: ${humorMax.toFixed(2)}\n\n`;
+    let resultText = `🎉 Optimal Seating Arrangement Found!\n\nHumor Score: ${humorMax.toFixed(2)} / 5.00\n\n`;
     
     // Group guests by table
     const tableAssignments = {};
