@@ -4,15 +4,15 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="Federico Gianno"/>
-    <meta property="description" content="Plan your wedding at its best"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Happy Wedding"/>
-    <meta property="og:url" content="https://j4nn0.github.io/happy-wedding"/>
-    <meta property="og:image" content="https://raw.githubusercontent.com/J4NN0/happy-wedding/main/img/jwedding.png"/>
-    <meta property="og:description" content="Plan your wedding at its best"/>
+    <meta name="author" content="Federico Gianno" />
+    <meta property="description" content="Plan your wedding at its best" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Happy Wedding" />
+    <meta property="og:url" content="https://j4nn0.github.io/happy-wedding" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/J4NN0/happy-wedding/main/img/jwedding.png" />
+    <meta property="og:description" content="Plan your wedding at its best" />
 
-    <link rel="shortcut icon" href="img/jwedding.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/jwedding.png" type="image/x-icon" />
 
     <title>Happy Wedding</title>
 
@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="css/planning.css">
     <link rel="stylesheet" href="css/title.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@700&family=Great+Vibes&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@700&family=Great+Vibes&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -34,16 +36,20 @@
 
         <section class="description">
             <p>
-                Planning a wedding? Great. Now ruin it beautifully by seating Aunt Karen next to your ex.
+                Planning a wedding? Great. Now don't ruin it beautifully by seating Aunt Karen next to your ex.
             </p>
             <p>
-                Happy Wedding is the world's most questionable wedding seating simulator - invite your guests, track their rivalries, and let our mood-maximizing algorithm do its emotional damage. Will you create eternal bliss... or a polite disaster?
+                Happy Wedding is the ultimate questionable wedding seating simulator - invite your guests, track
+                their rivalries, and let the mood-maximizing algorithm do its emotional damage. Will you create eternal
+                bliss or a polite disaster?
             </p>
             <p>
-                Start by entering how many guests are coming to your wedding - you can give them names or leave them as mysterious partygoers. Then, define how each pair feels about each other on a scale from -5 (arch-enemies) to +5 (soulmates). Once everyone's personalities and grudges are locked in, set how many tables are available and how many guests each one can hold. Hit the button, and the tool will calculate the best possible seating plan to maximize harmony (or at least avoid food fights).
+                Just enter your guest count, name them (or not), and rate relationships from -5 (arch-enemies) to +5
+                (soulmates). Set the number and size of tables, hit the button, and we’ll generate the seating plan most
+                likely to keep the peace—or start a food fight.
             </p>
             <p class="technical-note">
-                This tool uses a brute-force search (i.e. exhaustive search) to evaluate all possible seating permutations and select the one that maximizes total guest compatibility. Since the solution space grows factorially with the number of guests and tables, runtime increases rapidly with scale. For implementation details, check out the <a href="https://github.com/J4NN0/happy-wedding">GitHub repo</a>.
+                This tool uses brute-force search to test every possible seating arrangement and pick the one with the highest overall compatibility. Because the solution space grows factorially with guests and tables, runtime scales quickly. For more details, see the <a href="https://github.com/J4NN0/happy-wedding">GitHub repo</a>.  
             </p>
         </section>
 
@@ -52,7 +58,8 @@
                 <div class="people-counter">
                     <span class="counter-label">👤 Total Guests</span>
                     <div class="counter-controls">
-                        <input type="number" class="counter-input" id="peopleCount" value="1" min="1" onchange="setPeopleCount(this.value)">
+                        <input type="number" class="counter-input" id="peopleCount" value="1" min="1"
+                            onchange="setPeopleCount(this.value)">
                     </div>
                 </div>
                 <div class="people-list" id="peopleList">
@@ -82,13 +89,15 @@
                     <div class="tables-counter">
                         <span class="counter-label">Total Tables</span>
                         <div class="counter-controls">
-                            <input type="number" class="counter-input" id="tablesCount" value="1" min="1" onchange="setTablesCount(this.value)">
+                            <input type="number" class="counter-input" id="tablesCount" value="1" min="1"
+                                onchange="setTablesCount(this.value)">
                         </div>
                     </div>
                     <div class="chairs-counter">
                         <span class="counter-label">Chair(s) Per Table</span>
                         <div class="counter-controls">
-                            <input type="number" class="counter-input" id="totalChairsCount" value="1" min="1" onchange="setTotalChairsCount(this.value)">
+                            <input type="number" class="counter-input" id="totalChairsCount" value="1" min="1"
+                                onchange="setTotalChairsCount(this.value)">
                         </div>
                     </div>
                 </div>
