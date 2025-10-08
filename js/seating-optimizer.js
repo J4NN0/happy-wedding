@@ -106,6 +106,5 @@ function displaySeatingResults() {
     
     alert(resultText);
     
-    // Also log to console for debugging
     console.log('Table assignments:', tableAssignments);
 }
